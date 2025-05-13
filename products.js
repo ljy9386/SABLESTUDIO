@@ -161,7 +161,7 @@
           <tr><td>총장</td><td>65cm</td></tr>
         </table>
       `,
-      category: "SHIRT"
+      category: ["SHIRT"]
     },
     {
       id: 10,
@@ -179,7 +179,7 @@
           <tr><td>총장</td><td>64cm</td></tr>
         </table>
       `,
-      category: "SHIRT"
+      category: ["SHIRT"]
     }
   ];
   
@@ -201,7 +201,7 @@
           <tr><td>총장</td><td>65cm</td></tr>
         </table>
       `,
-      category: "SHIRT"
+      category: ["SHIRT"]
     },
     {
       id: 12,
@@ -218,7 +218,7 @@
           <tr><td>총장</td><td>102cm</td></tr>
         </table>
       `,
-      category: "SKIRTS"
+      category: ["SKIRTS"]
     },
     {
       id: 13,
@@ -235,7 +235,7 @@
           <tr><td>총장</td><td>103cm</td></tr>
         </table>
       `,
-      category: "SKIRTS"
+      category: ["SKIRTS"]
     },
     {
       id: 14,
@@ -251,7 +251,7 @@
           <tr><td>총장</td><td>90cm</td></tr>
         </table>
       `,
-      category: "SKIRTS"
+      category: ["SKIRTS"]
     },
     {
       id: 15,
@@ -267,7 +267,7 @@
           <tr><td>총장</td><td>88cm</td></tr>
         </table>
       `,
-      category: "SKIRTS"
+      category: ["SKIRTS"]
     },
     {
       id: 16,
@@ -284,7 +284,7 @@
           <tr><td>총장</td><td>105cm</td></tr>
         </table>
       `,
-      category: "PANTS"
+      category: ["PANTS"]
     },
     {
       id: 17,
@@ -301,7 +301,7 @@
           <tr><td>총장</td><td>104cm</td></tr>
         </table>
       `,
-      category: "PANTS"
+      category: ["PANTS"]
     },
     {
       id: 18,
@@ -318,7 +318,7 @@
           <tr><td>총장</td><td>95cm</td></tr>
         </table>
       `,
-      category: "PANTS"
+      category: ["PANTS"]
     },
     {
       id: 19,
@@ -335,7 +335,7 @@
           <tr><td>총장</td><td>100cm</td></tr>
         </table>
       `,
-      category: "PANTS"
+      category: ["PANTS"]
     },
     {
       id: 20,
@@ -353,7 +353,7 @@
           <tr><td>총장</td><td>67cm</td></tr>
         </table>
       `,
-      category: "KNITWEAR"
+      category: ["KNITWEAR"]
     }
   );
   // 이어서 allProducts 배열 계속 추가
@@ -374,7 +374,7 @@
           <tr><td>총장</td><td>68cm</td></tr>
         </table>
       `,
-      category: "KNITWEAR"
+      category: ["KNITWEAR"]
     },
     {
       id: 22,
@@ -392,7 +392,7 @@
           <tr><td>총장</td><td>69cm</td></tr>
         </table>
       `,
-      category: "KNITWEAR"
+      category: ["KNITWEAR"]
     },
     {
       id: 23,
@@ -410,7 +410,7 @@
           <tr><td>총장</td><td>66cm</td></tr>
         </table>
       `,
-      category: "KNITWEAR"
+      category: ["KNITWEAR"]
     },
     {
       id: 24,
@@ -425,7 +425,7 @@
           <tr><td>사이즈</td><td>260 / 270 / 280</td></tr>
         </table>
       `,
-      category: "SHOES"
+      category: ["SHOES"]
     },
     {
       id: 25,
@@ -440,7 +440,7 @@
           <tr><td>사이즈</td><td>260 / 270 / 280</td></tr>
         </table>
       `,
-      category: "SHOES"
+      category: ["SHOES"]
     },
     {
       id: 26,
@@ -455,7 +455,7 @@
           <tr><td>사이즈</td><td>260 / 270 / 280</td></tr>
         </table>
       `,
-      category: "SHOES"
+      category: ["SHOES"]
     },
     {
       id: 27,
@@ -470,7 +470,7 @@
           <tr><td>사이즈</td><td>260 / 270 / 280</td></tr>
         </table>
       `,
-      category: "SHOES"
+      category: ["SHOES"]
     },
   );  
 

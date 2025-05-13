@@ -383,6 +383,53 @@
     </main>
   </div>
   <script>
+        // ────────── 드롭다운 열기/닫기 ──────────
+        function toggleDropdown(id) {
+      const dropdown = document.getElementById(id);
+      dropdown.classList.toggle('active');
+    }
+
+    // ────────── 검색창 열기/닫기 ──────────
+    const searchToggle = document.getElementById("search-toggle");
+    const searchBox = document.getElementById("search-box");
+    const searchClose = document.getElementById("search-close");
+    const searchInput = document.getElementById("search-input");
+    const searchSubmit = document.getElementById("search-submit");
+    const searchOverlay = document.getElementById("search-overlay");
+
+    // 검색창 열기
+    searchToggle.onclick = () => {
+      searchBox.style.display = "block";
+      searchOverlay.style.display = "block";
+      searchInput.focus();
+    };
+    // 검색창 닫기
+    searchClose.onclick = () => {
+      searchBox.style.display = "none";
+      searchOverlay.style.display = "none";
+    };
+    // overlay 클릭 시 닫기
+    searchOverlay.onclick = () => {
+      searchBox.style.display = "none";
+      searchOverlay.style.display = "none";
+    };
+
+    // 실제 검색 동작
+    function goSearch() {
+      const keyword = searchInput.value.trim();
+      if (keyword) {
+        const encoded = encodeURIComponent(keyword);
+        location.href = `search.html?q=${encoded}`;
+      }
+    }
+    // Enter 키로 검색
+    searchInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        goSearch();
+      }
+    });
+    // 돋보기 버튼으로 검색
+    searchSubmit.onclick = goSearch;
     function getSelectedValues(selector) {
       const checkboxes = document.querySelectorAll(selector);
       let values = [];
