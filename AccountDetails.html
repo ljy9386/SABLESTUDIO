@@ -100,12 +100,6 @@
     <label for="id">ID*</label>
     <input type="text" id="id" value="" />
 
-    <label for="password">Password*</label>
-    <input type="password" id="password" />
-
-    <label for="verify-password">Verify Password*</label>
-    <input type="password" id="verify-password" />
-
     <label for="name">Name*</label>
     <input type="text" id="name" value="" />
 
@@ -140,11 +134,21 @@
         return;
       }
   
-      // ✅ 자동 입력
-      document.getElementById("id").value = user.email || "";
-      document.getElementById("name").value = user.name || "";
-      document.querySelector("input[type='email']").value = user.email || "";
-    });
+       // ✅ 자동 입력 항목들
+    document.getElementById("id").value = user.user_id || "";
+    document.getElementById("name").value = user.name || "";
+    document.querySelector("input[type='email']").value = user.email || "";
+    document.querySelector(".postal-group input").value = user.postalCode || "";
+    document.querySelectorAll("input[type='text']")[4].value = user.address || "";
+
+    // ✅ 전화번호 자동입력 (하이픈 제거 후 분리)
+    if (user.phone) {
+      const phone = user.phone.replace(/-/g, "");
+      document.querySelectorAll(".phone-group input")[0].value = phone.slice(0, 3);
+      document.querySelectorAll(".phone-group input")[1].value = phone.slice(3, 7);
+      document.querySelectorAll(".phone-group input")[2].value = phone.slice(7);
+    }
+  });
   </script>
 </body>
 </html>
