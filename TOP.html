@@ -349,8 +349,8 @@
 
       .icon-bar {
         position: absolute;
-        top: -5px;
-        right: 10px;
+        top: -1px;
+        right: 40px;
         display: flex;
         flex-direction: row;
         gap: 10px;
@@ -418,61 +418,68 @@
       .price {
         font-size: 13px;
       }
+
       /* 검색창 */
-  #search-box {
-  top: 80px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: auto;
-}
+      #search-box {
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+      }
 
-.search-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  background: white;
-  border: 1px solid #000;
-  width: auto;
-  max-width: 300px; /* ✅ 검색창 전체 너비 제한 */
-  gap: 10px;
-}
+      .search-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 12px;
+        background: white;
+        border: 1px solid #000;
+        width: auto;
+        max-width: 300px;
+        /* ✅ 검색창 전체 너비 제한 */
+        gap: 10px;
+      }
 
-.search-container input {
-  flex: 1;
-  min-width: 0;
-  font-size: 14px;
-  border: none;
-  outline: none;
-  background: none;
-}
+      .search-container input {
+        flex: 1;
+        min-width: 0;
+        font-size: 14px;
+        border: none;
+        outline: none;
+        background: none;
+      }
 
-.search-container label {
-  display: none; /* label 숨김 */
-}
+      .search-container label {
+        display: none;
+        /* label 숨김 */
+      }
 
-.search-icon-button,
-#search-close {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  display: flex;
-  align-items: center;
-}
+      .search-icon-button,
+      #search-close {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        display: flex;
+        align-items: center;
+      }
 
-.search-icon {
-  width: 20px;
-  height: 20px;
-  stroke: #000;
-}
+      .search-icon {
+        width: 20px;
+        height: 20px;
+        stroke: #000;
+      }
 
-#search-close {
-  font-size: 20px;
-  color: #000;
-  margin-left: 5px;
-}
-}
+      #search-close {
+        font-size: 20px;
+        color: #000;
+        margin-left: 5px;
+      }
+
+      .filter-section {
+        display: none !important;
+      }
+    }
   </style>
 </head>
 
@@ -572,13 +579,20 @@
       <h3 style="font-size: 13px; font-weight: normal; letter-spacing: 0.4px; margin-bottom: 15px;">CATEGORIES</h3>
       <ul style="list-style: none; padding-left: 0; font-size: 13px; font-family: 'Pretendard', sans-serif;">
         <li style="margin-bottom: 10px;"><a href="new.html" style="text-decoration: none; color: black;">NEW</a></li>
-        <li style="margin-bottom: 10px;"><a href="SHIRT.html" style="text-decoration: none; color: black;">SHIRT</a></li>
-        <li style="margin-bottom: 10px;"><a href="KNITWEAR.html"style="text-decoration: none; color: black;">KNITWEAR</a></li>
-        <li style="margin-bottom: 10px;"><a href="PANTS.html" style="text-decoration: none; color: black;">PANTS</a></li>
-        <li style="margin-bottom: 10px;"><a href="SKIRTS.html" style="text-decoration: none; color: black;">SKIRTS</a></li>
-        <li style="margin-bottom: 10px;"><a href="COATS.html" style="text-decoration: none; color: black;">COATS</a></li>
-        <li style="margin-bottom: 10px;"><a href="JACKETS.html" style="text-decoration: none; color: black;">JACKETS</a></li>
-        <li style="margin-bottom: 10px;"><a href="shoes.html" style="text-decoration: none; color: black;">SHOES</a></li>
+        <li style="margin-bottom: 10px;"><a href="SHIRT.html" style="text-decoration: none; color: black;">SHIRT</a>
+        </li>
+        <li style="margin-bottom: 10px;"><a href="KNITWEAR.html"
+            style="text-decoration: none; color: black;">KNITWEAR</a></li>
+        <li style="margin-bottom: 10px;"><a href="PANTS.html" style="text-decoration: none; color: black;">PANTS</a>
+        </li>
+        <li style="margin-bottom: 10px;"><a href="SKIRTS.html" style="text-decoration: none; color: black;">SKIRTS</a>
+        </li>
+        <li style="margin-bottom: 10px;"><a href="COATS.html" style="text-decoration: none; color: black;">COATS</a>
+        </li>
+        <li style="margin-bottom: 10px;"><a href="JACKETS.html" style="text-decoration: none; color: black;">JACKETS</a>
+        </li>
+        <li style="margin-bottom: 10px;"><a href="shoes.html" style="text-decoration: none; color: black;">SHOES</a>
+        </li>
       </ul>
     </aside>
     <main>

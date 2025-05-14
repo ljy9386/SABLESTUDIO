@@ -224,104 +224,128 @@
 
     /* ✅ 반응형 미디어 쿼리 추가 */
     @media screen and (max-width: 768px) {
-  header {
-    flex-wrap: wrap;
-    padding: 10px 20px;
-    align-items: flex-start;
-    position: relative;
-  }
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px 15px;
+        position: relative;
+      }
 
-  .main-nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    font-size: 12px;
-  }
+      header>a {
+        align-self: flex-start;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
 
-  .nav-item {
-    margin: 0;
-  }
+      nav {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        /* ⬅ 중앙 정렬 핵심 */
+      }
 
-  .nav-item a {
-    font-size: 12px;
-    padding: 4px 6px;
-  }
+      .main-nav {
+        display: flex;
+        gap: 12px;
+        flex-wrap: nowrap;
+      }
 
-  .icon-bar {
-    position: absolute;
-    top: -1px;       /* ⬆ 더 위로 */
-    right: 10px;     /* ⬅ 더 붙게 */
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    transform: scale(1.0);  /* ✅ 크기 줄임 */
-  }
+      .nav-item {
+        margin: 0;
+      }
 
-  .icon {
-    width: 16px;
-    height: 16px;
-  }
+      .nav-item a {
+        font-size: 13px;
+        padding: 4px 6px;
+      }
 
-  .cart span {
-    font-size: 11px;
-  }
-  /* 검색창 */
-  #search-box {
-  top: 80px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: auto;
-}
-
-.search-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 12px;
-  background: white;
-  border: 1px solid #000;
-  width: auto;
-  max-width: 300px; /* ✅ 검색창 전체 너비 제한 */
-  gap: 10px;
-}
-
-.search-container input {
-  flex: 1;
-  min-width: 0;
-  font-size: 14px;
-  border: none;
-  outline: none;
-  background: none;
-}
-
-.search-container label {
-  display: none; /* label 숨김 */
-}
-
-.search-icon-button,
-#search-close {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  display: flex;
-  align-items: center;
-}
-
-.search-icon {
-  width: 20px;
-  height: 20px;
-  stroke: #000;
-}
-
-#search-close {
-  font-size: 20px;
-  color: #000;
-  margin-left: 5px;
-}
-}
+      .icon-bar {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        gap: 10px;
+        transform: scale(1);
+      }
 
 
+      .icon {
+        width: 16px;
+        height: 16px;
+      }
+
+      .cart span {
+        font-size: 11px;
+      }
+
+      /* 검색창 */
+      #search-box {
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+      }
+
+      .search-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 12px;
+        background: white;
+        border: 1px solid #000;
+        width: auto;
+        max-width: 300px;
+        /* ✅ 검색창 전체 너비 제한 */
+        gap: 10px;
+      }
+
+      .search-container input {
+        flex: 1;
+        min-width: 0;
+        font-size: 14px;
+        border: none;
+        outline: none;
+        background: none;
+      }
+
+      .search-container label {
+        display: none;
+        /* label 숨김 */
+      }
+
+      .search-icon-button,
+      #search-close {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        display: flex;
+        align-items: center;
+      }
+
+      .search-icon {
+        width: 20px;
+        height: 20px;
+        stroke: #000;
+      }
+
+      #search-close {
+        font-size: 20px;
+        color: #000;
+        margin-left: 5px;
+      }
+
+      footer {
+        padding: 10px 10px !important;
+      }
+
+      footer div:first-child {
+        margin-bottom: 5px !important;
+      }
+
+      footer div:last-child {
+        line-height: 1.2 !important;
+      }
+    }
   </style>
 
 </head>
